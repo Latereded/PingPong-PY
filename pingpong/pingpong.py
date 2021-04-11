@@ -26,6 +26,12 @@ class Player(GameSprite):
         if keys[K_s] and self.rect.y < win_height - 151:
             self.rect.y += self.speed
 
+font.init()
+font = font.Font(None, 35)
+lose1 = font.render('Player 1 Lose!', True, (180,0,0))
+lose2 = font.render('Player 2 Lose!', True, (180,0,0))
+
+
 back = (255,255,255)
 win_width = 600
 win_height = 500
